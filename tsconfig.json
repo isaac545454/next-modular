@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@/app": ["src/app"],
+      "@/app/*": ["src/app/*"],
+      "@/modules": ["src/app/modules"],
+      "@/modules/*": ["src/app/modules/*"],
+      "@/shared": ["src/shared"],
+      "@/shared/*": ["src/shared/*"],
+      "@/test": ["src/test"],
+      "@/test/*": ["src/test/*"]
+    }
+  },
+  "include": [
+    "src",
+    "eslint",
+    "next-env.d.ts",
+    "next.config.ts",
+    "vitest.config.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

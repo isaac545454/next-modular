@@ -1,0 +1,5 @@
+# Configuração do pnpm 11 (allowlist de scripts de build).
+# Não define workspaces nem pacotes extras — o app continua único na raiz.
+allowBuilds:
+  esbuild: true
+  sharp: true
